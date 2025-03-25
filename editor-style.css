@@ -1,0 +1,30 @@
+/* 見出し */
+  .editor-ttl {
+    font-size: 115%;
+    margin: 8px 0;
+    padding: 4px 16px;
+    background-color: #eee;
+  }
+  * + .editor-ttl {
+    margin-top: 40px;
+  }
+  .editor-ttl2 {
+    font-size: 115%;
+  }
+  * + .editor-ttl2 {
+    margin-top: 40px;
+  }
+
+/* 注意書き */
+  .txt-attention {
+    font-size: 88%;
+    color: #999;
+  }
+
+@media (max-width: 767px) {
+  .editor-ttl {
+    font-size: 100%;
+  }
+  .editor-ttl2 {
+    font-size: 90%;
+  }

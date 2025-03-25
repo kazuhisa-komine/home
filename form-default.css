@@ -1,0 +1,216 @@
+#formy_form table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width:100%;
+}
+#formy_form th,
+#formy_form td {
+  padding: 10px 20px;
+  border-bottom:1px solid #ddd;
+  vertical-align: middle;
+}
+#formy_form th {
+  font-weight:normal;
+  white-space: nowrap;
+  text-align:left;
+  width:34%;
+  position: relative;
+}
+#formy_form table input[type="text"],
+#formy_form table input[type="tel"],
+#formy_form table input[type="email"],
+#formy_form table input[type="date"],
+#formy_form table input[type="password"],
+#formy_form table textarea {
+  width: 100%;
+  box-sizing: border-box;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  vertical-align:bottom;
+}
+#formy_form table input[type="text"],
+#formy_form table input[type="tel"],
+#formy_form table input[type="email"],
+#formy_form table input[type="date"],
+#formy_form table input[type="password"],
+#formy_form select,
+#formy_form textarea {
+  margin: 0;
+  padding: 8px 13px;
+  height: 40px;
+  border: 1px solid #ccc;
+  font: inherit;
+  font-size:100%;
+  -webkit-appearance: none;
+  appearance: none;
+}
+#formy_form select {
+  -webkit-appearance: menulist
+}
+#formy_form textarea {
+  height: 120px;
+}
+#formy_form ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#formy_form input:hover { opacity:0.7; }
+#formy_form textarea:hover { opacity:0.7; }
+
+/******************************************************
+  入力欄の背景色
+******************************************************/
+/* 入力時 */
+#formy_form input:focus {  background-color: #fff;}
+/* 必須項目 */
+#formy_form .parsley-validated {  background-color: #eee;}
+/* エラー時 */
+#formy_form .parsley-error {  background-color: #fee;}
+/* 入力完了時 */
+#formy_form .parsley-success {  background-color: #fff;}
+
+
+/******************************************************
+    入力における説明文
+******************************************************/
+.help_text {
+  font-size: 85%;
+  color: #999;
+}
+.hidden_help {
+  display: none;
+}
+
+/******************************************************
+    プライバシーポリシー表示欄
+******************************************************/
+.formy_privacy div {
+  overflow-y: scroll;
+  height: 140px;
+  border: solid 1px #ccc;
+  font-size: 85%;
+  padding: 10px;
+}
+
+
+/******************************************************
+    必須アイコン 
+******************************************************/
+.requiredIcon {
+  background: #E86A8E;
+  color: #fff;
+  margin: 0 1em 0 0;
+  font-size: 70%;
+  padding: 2px 5px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  position: absolute;
+  right: 0;
+}
+
+
+/******************************************************
+    CTAボタン
+******************************************************/
+#formy_btn {
+  text-align:center;
+}
+#formy_btn input {
+  font-size: inherit;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 50px;
+  padding: 10px 30px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+/* 「入力内容を確認する」ボタン */
+.formy_confirm {
+  background-color: #659ccc;
+}
+/* 「入力が完了していません」ボタン*/
+.formy_submit_disabled {
+  background-color: #ccc;
+}
+
+#formy_btn .formy_submit_disabled:hover {
+  /* hoverアクションを無効化 */
+  opacity:1;
+  cursor: default;
+}
+/* 「編集する」ボタン */
+.autoConfirmBack {
+  background-color: #aaa;
+}
+/* 「送信する」ボタン */
+.formy_send {
+  background-color: #9ccc65;
+}
+/* 確認メッセージ */
+.confirm-message {
+  margin: 0;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/******************************************************
+    残りの必須項目
+******************************************************/
+#total_required {
+  margin: 0;
+  padding: 20px;
+  color: #E86A8E;
+  text-align: center;
+}
+
+
+/******************************************************
+    パスワード強度
+******************************************************/
+.hint-message {
+  font-size: 85%;
+}
+.hint-message.empty,
+.hint-message.not-match {
+  color: #f55555;
+}
+.hint-message.weak {
+  color: #f55500;
+}
+.hint-message.average {
+  color: #f90;
+}
+.hint-message.strong {
+  color: #9ccc65;
+}
+.hint-message.very-strong {
+  color: #4a8bc3;
+}
+
+
+@media (max-width: 768px) {
+  #formy_form {
+    width: auto;
+  }
+  #formy_form th,
+  #formy_form td {
+    display: block;
+    width: auto;
+  }
+  #formy_form th {
+    border-bottom: none;
+    white-space: normal;
+    font-weight: bold;
+    padding: 10px 5px 0;
+  }
+  #formy_form td {
+    padding: 0 5px 10px;
+  }
+  .autoConfirmBack {
+    margin-bottom: 10px;
+  }
+}
