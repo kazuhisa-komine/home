@@ -1,8 +1,9 @@
 $(window).on('load', function () {
-  if ($('#top').length > 0) {
-    var top = $('#top').offset().top;
-    // console.log(top); ← 必要ならここで確認してOK
+  const $top = $('#top');
+  if ($top.length > 0) {
+    const topOffset = $top.offset().top;
+    console.log(topOffset); // ← 位置を確認したい時だけ表示
   }
 
-  // 既存の処理はここに書く（必要なら）
+  // 他の処理があればここに書いてね
 });
