@@ -1,12 +1,8 @@
-$(function () {
+$(window).on('load', function () {
   if ($('#top').length > 0) {
     var top = $('#top').offset().top;
-    // console.log(top); ← 確認したいならここで
+    // console.log(top); ← 必要ならここで確認してOK
   }
 
-  // 以下は既存のJS処理（仮定） - ここに必要な追加処理を入れる
-  // 例：
-  // $('.some-element').on('click', function () {
-  //   ...
-  // });
+  // 既存の処理はここに書く（必要なら）
 });
