@@ -6,17 +6,3 @@
 
 /*# sourceMappingURL=style.css.map */
 
-
-/* ▼追加CSS（確実に動作） */
-.js-inView {
-  opacity: 0 !important;
-  visibility: hidden;
-}
-
-.js-inView.js-inView-activate {
-  opacity: 1 !important;
-  visibility: visible;
-  transition: opacity 0.6s ease, transform 0.6s ease !important;
-}
-
-
